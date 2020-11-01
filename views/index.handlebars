@@ -1,28 +1,38 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container">
+    <h1>Eat-Da-Burger!</h1>
 
-<ul>
-    {{#each burgers}}
-      {{#unless devoured}}
-        {{> burgers/burger-block devoured=false}}
-      {{/unless}}
-    {{/each}}
-</ul>
+    <img src="../assets/Realistic Fast Food.jpg">
 
-<ol>
-    {{#each burgers}}
-      {{#if devoured}}
-        {{> burgers/burger-block devoured=true}}
-      {{/if}}
-    {{/each}}
-</ol>
-
-
-<h2>Add a Burger!</h2>
-<form class="create-burger">
-
-    <div class="form-group">
-        <label for="burger">Enter the burger you want to eat!</label>
-        <input type="text" id="burger" name="burger">
+    <div class="row">
+        <div class="col-6">
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6">
+            <ol>
+                {{#each burgers}}
+                {{#if devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                {{/if}}
+                {{/each}}
+            </ol>
+        </div>
     </div>
-    <button type="submit">Add Burger</button>
-</form>
+    <div class="row">
+        <div class="col-12">
+            <h2>Add a Burger!</h2>
+            <form class="create-burger">
+                <div class="form-group">
+                    <label for="burger">Enter the burger you want to eat!</label>
+                    <input type="text" id="burger" name="burger">
+                </div>
+                <button type="submit">Add Burger</button>
+            </form>
+        </div>
+    </div>
+</div>
