@@ -40,7 +40,7 @@ N/A
 
 ## License
 
-None
+MIT License
   
 ## Questions
 
