@@ -1,3 +1,7 @@
 <li>
     {{name}}
+
+    <button class="devour-it" data-id="{{id}}" data-devour="{{devoured}}">
+        {{#unless devoured}}DEVOUR IT!{{/unless}}
+    </button>
 </li>
