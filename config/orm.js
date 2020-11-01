@@ -60,6 +60,18 @@ const orm = {
             cb(results);
         });
     },
+    delete: function(table, condition, cb) {
+        let queryString = "DELETE FROM " + table;
+        queryString += " WHERE ";
+        queryString += condition;
+
+        connection.query(queryString, function(error, results) {
+            if (error) {
+                throw error;
+            }
+            cb(results);
+        });
+    }
 
 
 
