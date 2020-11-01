@@ -1,0 +1,10 @@
+body {
+    background-color: #EECF6D;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
