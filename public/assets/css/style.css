@@ -19,7 +19,7 @@ ul.devoured {
 
 ul.devoured li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #45050C;
     border: 1px solid black;
     color: white;
@@ -35,7 +35,7 @@ ul.undevoured {
 
 ul.undevoured li {
     list-style-type: none;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #D5AC4E;
     border: 1px solid black;
     margin: auto;
@@ -47,6 +47,7 @@ h1 {
     text-align: center;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    font-weight: bold;
 }
 .devour-it {
     background-color: #720E07;
@@ -60,9 +61,13 @@ textarea {
 }
 
 #create {
-    padding-top: 50px;
+    padding-top: 80px;
     margin: auto;
     text-align: center;
+}
+
+#columns {
+    padding-top: 50px;
 }
 
 #add {
@@ -80,18 +85,37 @@ textarea {
     ul {
         text-align: center;
     }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+    #create {
+        padding-top: 75px;
+    }
+    #columns {
+        padding-top: 25px;
+    }
     ul.undevoured li {
         font-size: 20px;
     }
     ul.devoured li {
         font-size: 20px;
     }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .devour-it {
         font-size: 15px;
+    }
+    #create {
+        padding-top: 50px;
+    }
+    #columns {
+        padding-top: 25px;
+    }
+    ul.undevoured li {
+        font-size: 25px;
+    }
+    ul.devoured li {
+        font-size: 25px;
     }
 }
 
@@ -106,18 +130,34 @@ textarea {
     .devour-it {
         font-size: 20px;
     }
+   .create-burger {
+       font-size: 25px;
+   }
+   h1 {
+       font-size: 55px;
+   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     ul.undevoured li {
-        font-size: 30px;
+        font-size: 20px;
     }
     ul.devoured li {
-        font-size: 30px;
+        font-size: 20px;
     }
     .devour-it {
-        font-size: 25px;
+        font-size: 15px;
+    }
+    #create {
+        padding-top: 0px;
+    }
+
+    #columns {
+        padding-top: 0px;
+    }
+    #add {
+        font-size: 20px;
     }
 }
 
