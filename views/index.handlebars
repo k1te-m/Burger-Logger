@@ -1,11 +1,10 @@
 <div class="container">
     <h1>Eat-Da-Burger!</h1>
-
     <img src="../assets/Realistic Fast Food.jpg">
 
     <div class="row">
         <div class="col-6">
-            <ul>
+            <ul class="undevoured">
                 {{#each burgers}}
                 {{#unless devoured}}
                     {{> burgers/burger-block devoured=false}}
@@ -14,22 +13,26 @@
             </ul>
         </div>
         <div class="col-6">
-            <ol>
+            <ul class ="devoured">
                 {{#each burgers}}
                 {{#if devoured}}
                     {{> burgers/burger-block devoured=true}}
                 {{/if}}
                 {{/each}}
-            </ol>
+            </ul>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
+    <div class="row" id="create">
+        <div class="col">
             <h2>Add a Burger!</h2>
             <form class="create-burger">
                 <div class="form-group">
                     <label for="burger">Enter the burger you want to eat!</label>
-                    <input type="text" id="burger" name="burger">
+                    <div class="row">
+                        <div class="col">
+                            <textarea id="burger" name="burger" rows="4" cols="50"></textarea>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit">Add Burger</button>
             </form>
