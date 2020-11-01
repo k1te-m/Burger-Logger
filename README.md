@@ -22,7 +22,7 @@ All necessary dependencies have been included in the package.json. Please utiliz
 
 *Examples of project use:*
 
-[Burger-Logger](./public/assets/img/demo)
+![Burger-Logger](./public/assets/img/demo)
 
 ## Contributing
 
