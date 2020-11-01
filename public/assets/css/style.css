@@ -12,19 +12,35 @@ img {
     width: 40%;
 }
 
+
+ul.devoured {
+    padding-left: 0px;
+}
+
 ul.devoured li {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #45050C;
     border: 1px solid black;
-    padding-left: 7px;
     color: white;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-left: 5px;
 }
 
 ul.undevoured {
+    padding-left: 0px;
+}
+
+ul.undevoured li {
     list-style-type: none;
-    font-size: 20px;
-    
+    font-size: 15px;
+    background-color: #D5AC4E;
+    border: 1px solid black;
+    margin: auto;
+    width: 100%;
+    padding-left: 5px;
 }
 
 h1 {
@@ -34,15 +50,73 @@ h1 {
 }
 .devour-it {
     background-color: #720E07;
-    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 textarea {
     background-color: #8B6220;
+    width: 100%;
 }
 
 #create {
+    padding-top: 50px;
     margin: auto;
-    width: 50%;
     text-align: center;
 }
 
+#add {
+    background-color: #45050C;
+    font-weight: bold;
+}
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .devour-it {
+        margin-top: 5px;
+    }
+    ul {
+        text-align: center;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    ul.undevoured li {
+        font-size: 20px;
+    }
+    ul.devoured li {
+        font-size: 20px;
+    }
+    .devour-it {
+        font-size: 15px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    ul.undevoured li {
+        font-size: 25px;
+    }
+    ul.devoured li {
+        font-size: 25px;
+    }
+    .devour-it {
+        font-size: 20px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    ul.undevoured li {
+        font-size: 30px;
+    }
+    ul.devoured li {
+        font-size: 30px;
+    }
+    .devour-it {
+        font-size: 25px;
+    }
+}
