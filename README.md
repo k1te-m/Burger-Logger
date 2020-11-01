@@ -22,7 +22,7 @@ All necessary dependencies have been included in the package.json. Please utiliz
 
 *Examples of project use:*
 
-[Heroku](https://pacific-badlands-45042.herokuapp.com/)
+[Heroku-Deployed-Link](https://pacific-badlands-45042.herokuapp.com/)
 
 ![Burger-Logger](/public/assets/img/demo.png)
 
