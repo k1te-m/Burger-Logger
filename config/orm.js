@@ -43,14 +43,14 @@ const orm = {
             cb(results);
         });
     },
-    create: function(table, column, values, cb) {
+    create: function(table, columns, values, cb) {
         let queryString = "INSERT INTO " + table;
 
         queryString += " (";
-        queryString += cols.toString();
+        queryString += columns.toString();
         queryString += ") ";
         queryString += "VALUES (";
-        queryString += printQuestionMarks(vals.length);
+        queryString += printQuestionMarks(values.length);
         queryString += ") ";
 
         connection.query(queryString, values, function(error, results) {
