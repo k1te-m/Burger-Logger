@@ -54,6 +54,7 @@ h1 {
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: bold;
+    color: white;
 }
 textarea {
     background-color: #8B6220;
@@ -73,6 +74,7 @@ textarea {
 #add {
     background-color: #45050C;
     font-weight: bold;
+    color: white;
 }
 
 
