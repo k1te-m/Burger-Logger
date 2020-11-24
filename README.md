@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/k1te-m/Burger-Logger)![GitHub top language](https://img.shields.io/github/languages/top/k1te-m/Burger-Logger)
 
-## Descripton
+## Description
 A fullstack application that utilizes MVC design pattern, Node, MySQL, Express, Handlebars, and a custom made ORM to display different burgers for a user to devour. The user may input the name of a new burger that they would like to eat. This burger is then added to the MySQL database and is displayed on the left side of the page waiting to be devoured. When the devour button is clicked, the burger is moved to the right side of the page and the database is updated. This appliacation is deployed via Heroku with a JawsDB database. 
 
 ## Table of Contents
